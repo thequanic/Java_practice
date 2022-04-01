@@ -3,7 +3,7 @@ package unit_01;
 
 //Write a java program to demostrate constants in java
 
-public class P2_Task03_ConstantsInjava {
+public class P2_Task02_ConstantsInjava {
 	
 	public static final double Pi=3.14; //use final keyword to declare constant variables
 										
@@ -41,6 +41,6 @@ class NewClass
 	void add(int a, int b)
 	{
 		System.out.println(a+b);
-		System.out.println(P2_Task03_ConstantsInjava.Pi);
+		System.out.println(P2_Task02_ConstantsInjava.Pi);
 	}
 }
