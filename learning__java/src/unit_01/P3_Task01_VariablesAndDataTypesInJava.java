@@ -4,7 +4,8 @@ package unit_01;
 //write a java Program to 
 public class P3_Task01_VariablesAndDataTypesInJava {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		
 		
 		//how to declare variable in java: valid declarations
@@ -70,15 +71,15 @@ public class P3_Task01_VariablesAndDataTypesInJava {
 		
 		
 		
-		System.out.println(ABC.j); //using static variables of class ABC
+		System.out.println(ABCD.j); //using static variables of class ABC
 		
-		ABC obj1 = new ABC();
+		ABCD obj1 = new ABCD();
 		System.out.println(obj1.i); //instance variables of object obj1
 		
-		ABC obj2 = new ABC();
+		ABCD obj2 = new ABCD();
 		System.out.println(obj2.i); //instance variables of object obj2
 		
-		ABC.print();
+		ABCD.print();
 		
 	
 
@@ -88,7 +89,7 @@ public class P3_Task01_VariablesAndDataTypesInJava {
 	
 	void display()
 	{
-		int a =5;  //local variable
+		int a = 5;  //local variable
 		System.out.println("This is Display method");
 		System.out.println(a);
 		
@@ -96,7 +97,7 @@ public class P3_Task01_VariablesAndDataTypesInJava {
 
 }
 
-class ABC
+class ABCD
 {
 	static int j=10;  //class variable/static variable
 	
