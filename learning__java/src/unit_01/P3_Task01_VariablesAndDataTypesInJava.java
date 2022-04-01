@@ -2,6 +2,8 @@ package unit_01;
 
 
 /*
+ * Variable in Java is a data container that saves the data values during Java program executed
+ 
  * there are three types of variables in java 
  * 1. local variables : declared inside method 
  * 2. static variable : declared under class and can be accessed using class name
@@ -9,8 +11,8 @@ package unit_01;
  * 
  */
 
-//write a java Program to demostrate types of variables in Java, implement different data types
-//and demostrate type conversion and type casting 
+//write a java Program to demonstrate types of variables in Java, implement different data types
+//and demonstrate type conversion and type casting 
 
 
 public class P3_Task01_VariablesAndDataTypesInJava {
