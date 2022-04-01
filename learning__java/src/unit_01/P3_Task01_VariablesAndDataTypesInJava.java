@@ -1,7 +1,18 @@
 package unit_01;
 
 
-//write a java Program to 
+/*
+ * there are three types of variables in java 
+ * 1. local variables : declared inside method 
+ * 2. static variable : declared under class and can be accessed using class name
+ * 3. instance variable : declared under class. it belongs to object and accessed using object name,
+ * 
+ */
+
+//write a java Program to demostrate types of variables in Java, implement different data types
+//and demostrate type conversion and type casting 
+
+
 public class P3_Task01_VariablesAndDataTypesInJava {
 
 	public static void main(String[] args) 
