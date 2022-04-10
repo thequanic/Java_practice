@@ -44,7 +44,7 @@ class ABC4
 		System.out.println(a);
 		System.out.println(b);
 		
-		return a;
+	
 	}
 }
 
