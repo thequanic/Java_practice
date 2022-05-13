@@ -169,13 +169,19 @@ class ExceptionsInJava
 			
 			Scanner scan = new Scanner(System.in);
 			System.out.println("Enter a number:");
-			int a = scan.nextInt();
+			int a =0;
+			a= scan.nextInt();
+			
 			System.out.println("Entered number is:"+a);
-			scan.close();
+			//scan.close();
 		}
 		catch(InputMismatchException e)
 		{
 			System.out.println("InputMismatchException handled");
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
 		}
 		System.out.println("Done!");
 		
@@ -260,7 +266,8 @@ class ExceptionsInJava
 		{
 			Scanner scan = new Scanner(System.in);
 			System.out.println("Enter a number:");
-			int c= scan.nextInt();
+			int c= 0;
+			c=scan.nextInt();
 			int b=3/c;
 			System.out.println("result="+b);
 			scan.close();
