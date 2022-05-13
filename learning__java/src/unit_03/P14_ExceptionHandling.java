@@ -72,16 +72,9 @@ public class P14_ExceptionHandling {
 		obj.indexOutOfBoundException();
 		//obj.stackOverFlowError();
 		obj.nullPointerException();
-		obj.useOfThrow();
-		
-		try
-		{
-			obj.useOfThrowsAndFinally();
-		}
-		catch(ArithmeticException e)
-		{
-			System.out.println(e.getMessage());
-		}
+		//obj.useOfThrow();
+		obj.useOfThrowsAndFinally();
+	
 		
 		System.out.println("Program Done!");
 
@@ -238,24 +231,42 @@ class ExceptionsInJava
 		System.out.println("Done!");
 	}
 	
-	void useOfThrow()
+	void useOfThrow(int age) throws Exception
 	{
 		//throw keyword is used in java to explicitly throw an exception from a method or any block of code
 		//we can either throw checked or unchecked exception
 		//the throw keyword is mainly used to throw custom exception
-		try
-		{
-			throw new ArithmeticException("Use of Throw");
-		}
-		catch(ArithmeticException e)
-		{
-			System.out.println(e.getMessage());
-		}
+		
+			if(age<18)
+			{
+				throw new Exception("Use of Throw");
+
+				//this error must be handled by caller method
+				//pointed by throws
+			}
+			else
+			{
+				System.out.println("You are allowed");
+			}
+			
+		
+		
 		System.out.println("Done!");
 	}
 	
-	void useOfThrowsAndFinally() throws ArithmeticException
+	void useOfThrowsAndFinally() 
 	{
+		
+		//throws is a keyword in java which is used in the signature 
+		//of method to indicated that this method might throw one of the listed type exceptions
+				
+				/*
+				 * we can use throws keyword to delegate the responsibility of 
+				 * exception handling to the caller then caller method is responsible to handle that exception
+				 * 
+				 * syntax:
+				 * type method_name(parameters) throws exception_list
+				 */
 		
 		/*
 		 * finally	The "finally" block is used to execute the necessary code of the program. 
@@ -264,45 +275,24 @@ class ExceptionsInJava
 		
 		try
 		{
-			Scanner scan = new Scanner(System.in);
-			System.out.println("Enter a number:");
-			int c= 0;
-			c=scan.nextInt();
-			int b=3/c;
-			System.out.println("result="+b);
-			scan.close();
+			
+			useOfThrow(12);
+			
+			//we can not use it without try block as it throws checked exception
+			//so compiler enforce use to handle it
+			//if it would have thrown ArithmeticException then it can be called without try
+			//as it is a unchecked exception
 		}
-		catch(ArithmeticException e)
+		catch(Exception e)
 		{
 			System.out.println(e.getMessage());
 		}
 		finally
 		{
-			System.out.println("Done!!!");
+			System.out.println("Done!!!: The try catch is finished");
 			//executed whether exception occurs or not
 		}
 		
-		
-		
-		
-		
-		
-		//throws is a keyword in java which is used in the signature 
-		//of method to indicated that this method might throw one of the listed type exceptions
-		
-		/*
-		 * we can use throws keyword to delegate the responsibility of 
-		 * exception handling to the caller then caller method is responsible to handle that exception
-		 * 
-		 * syntax:
-		 * type method_name(parameters) throws exception_list
-		 */
-		
-		
-		int a=8/0;
-		//this error must be handled by caller method
-		//pointed by throws
-		
-		
+
 	}
 }
