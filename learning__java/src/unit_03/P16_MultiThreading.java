@@ -1,5 +1,18 @@
 package unit_03;
 
+/*
+ * MultiProcessing:
+ * -Sequencial MultiProcessing
+ * -Parallel MultiProcessing
+ * -Concurrent Multiprocessing
+ * 
+ * MultiTasking:
+ * -Sequencial MultiTasking
+ * -Parallel MultiTasking (Not Applicable)
+ * -Concurrent MultiTasking
+ * 
+ */
+
 public class P16_MultiThreading {
 		public static void main(String[] args)
 		{
@@ -33,7 +46,7 @@ class MultiThreadingInJava
 	
 	void ProducerConsumerProblems()
 	{
-		
+		 
 	}
 	
 	void Wait_And_Notify()
